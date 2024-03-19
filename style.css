@@ -8,9 +8,9 @@
 }
 
 
-.v-card-container{
-    height: 150vh;
-}
+/* .v-card-container{
+    height: 90vh;
+} */
 .sidebar-content{
     height: 110vh;
     /* position: fixed; */
@@ -31,7 +31,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 .col-lg-8{
-    /* height: 140vh; */
+    height: 100vh;
+    overflow-y: scroll;
     position: relative;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -39,6 +40,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.col-lg-3{
+  height: 100vh;
+  overflow-y: scroll;
+}
+.col-lg-8::-webkit-scrollbar{
+   display: none;   
+}
+.col-lg-3::-webkit-scrollbar{
+   display: none;   
 }
 .image-img,.blog-img{
     height: 120px;
